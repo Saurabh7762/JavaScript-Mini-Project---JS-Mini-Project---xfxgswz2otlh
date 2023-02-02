@@ -1,1 +1,460 @@
+* {
+    font-family: 'Space Grotesk';
+    letter-spacing: .1vw;
+    /* font-weight: 500; */
+    /* border: .1px solid blueviolet; */
+}
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#global-parent {
+    position: absolute;
+    background-color: white;
+}
+
+#gradient-image {
+    height: 100vh;
+    width: 30vw;
+}
+
+#background-left {
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+#credit-front {
+    position: absolute;
+    margin-top: 18vh;
+    margin-left: 18vh;
+}
+
+#credit-front-image {
+    width: 28vw;
+}
+
+#credit-back-image {
+    width: 28vw;
+}
+
+#logo {
+    position: absolute;
+    height: 2.5vw;
+    top: 2.3vw;
+    left: 2.5vw;
+}
+
+#number {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    top: 8vw;
+    left: 2vw;
+    display: inline-block;
+}
+
+#name {
+    position: absolute;
+    color: white;
+    top: 12.5vw;
+    left: 2vw;
+    font-size: 0.95vw;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#month {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 12.5vw;
+    left: 22vw;
+    font-size: 0.95vw;
+}
+
+#year {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 12.5vw;
+    left: 23.9vw;
+    font-size: 0.95vw;
+}
+
+#credit-back {
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: 33vh;
+
+}
+
+.credit-back-image_cvv {
+    color: white;
+    position: absolute;
+    left: 22vw;
+    top: 6.8vw;
+}
+
+
+/* form */
+* {
+    /* border: 1px solid red; */
+}
+
+.info {
+    margin-bottom: 2.5vh;
+    margin-top: 1.3vh;
+
+}
+
+.info-card {
+    width: 32vw;
+
+}
+
+#info-back {
+    position: absolute;
+    top: 28vh;
+    left: 55vw;
+}
+
+.info-card {
+    width: 25vw;
+}
+
+.info-card label {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.form-cardholder_name,
+.form-card-number,
+.cvv_details {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.exp_date_mm_yy {
+    width: 100%;
+}
+
+.cvv_details_sec {
+    width: 100%;
+}
+
+.exp_date_cvv {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+
+#errorCardNumber {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bolder;
+    margin-top: -15px;
+}
+
+.exp_date_MM_YY_Inp {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.exp_date_mm,
+.exp_date_yy {
+    width: 50%;
+    height: 2.5rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.form-btn {
+    width: 106%;
+    height: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: rgb(33, 9, 47);
+    color: white;
+    margin-top: 3vh;
+}
+
+.cvv_details,
+.exp_date_mm,
+.exp_date_yy {
+    margin-bottom: 5px;
+}
+
+.cvv_details_sec p {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.exp_date_mm_yy p {
+    word-wrap: break-word;
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.error_mm_yy {
+    column-count: 2;
+}
+
+
+
+
+
+/* js supporting code DONT MODIFY - BY RAHUL */
+.hidden {
+    display: none;
+}
+
+.hiddenmm {
+    /* display: none; */
+}
+
+/* Ending here */
+
+
+/* @media screen and (max-width:){
+    body{
+        flex-direction: column;
+    }
+} */
+
+/* Footer text...... */
+#footer_text {
+    position: absolute;
+    width: 110%;
+    font-size: smaller;
+}
+
+
+/* next page message--------> */
+
+#Confirm_page {
+    display: none;
+    position: absolute;
+    width: 60vh;
+    top: 35vh;
+    left: 110vh;
+
+}
+
+.Thankyou_page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+    row-gap: 5px;
+}
+
+#text_msg {
+    color: gray;
+    font-weight: bold;
+
+}
+
+#Continue_btn {
+    height: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: rgb(33, 9, 47);
+    color: white;
+    width: 50vh;
+    margin-top: 4vh;
+
+}
+
+@media screen and (max-width: 850px) and (min-width: 480px) {
+    #background-left img {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #credit-front {
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 20%;
+        z-index: 1;
+    }
+
+    #credit-front-image {
+        width: 350px;
+    }
+
+    #logo {
+        height: 20px;
+        top: 17px;
+        left: 25px;
+    }
+
+    #number {
+        font-size: 25px;
+        top: 90px;
+        left: 25px;
+    }
+
+    #name {
+        top: 140px;
+        left: 25px;
+        font-size: 13px;
+    }
+
+    #month {
+        top: 140px;
+        left: 272px;
+        font-size: 13px;
+    }
+
+    #year {
+        top: 140px;
+        left: 300px;
+        font-size: 13px;
+    }
+
+    /* ----------card-back----------- */
+    #credit-back {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 50%;
+        width: 350px;
+    }
+
+    #credit-back-image {
+        width: 350px;
+    }
+
+    .credit-back-image_cvv {
+        top: 85px;
+        left: 280px;
+        font-size: 15px;
+    }
+
+    #info-back {
+        margin-top: 350px;
+        position: relative;
+        top: 0;
+        left: 20%;
+        width: 70vw;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+
+    #footer_text {}
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    #background-left img {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #credit-front {
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 20px;
+        width: 250px;
+        z-index: 1;
+    }
+
+    #credit-front-image {
+        width: 250px;
+    }
+
+    #logo {
+        height: 18px;
+        top: 17px;
+        left: 15px;
+    }
+
+    #number {
+        font-size: 19px;
+        top: 70px;
+        left: 15px;
+    }
+
+    #name {
+        top: 105px;
+        left: 15px;
+        font-size: 9px;
+    }
+
+    #month {
+        top: 105px;
+        left: 190px;
+        font-size: 9px;
+    }
+
+    #year {
+        top: 105px;
+        left: 210px;
+        font-size: 9px;
+    }
+
+    /* ----------card-back----------- */
+    #credit-back {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 90px;
+        width: 250px;
+    }
+
+    #credit-back-image {
+        width: 250px;
+    }
+
+    .credit-back-image_cvv {
+        top: 60px;
+        left: 190px;
+        font-size: 15px;
+    }
+
+    #info-back {
+        margin-top: 290px;
+        position: relative;
+        top: 0;
+        left: 20%;
+        width: 130%;
+    }
+
+    .info-card {
+        width: 110%;
+    }
+}

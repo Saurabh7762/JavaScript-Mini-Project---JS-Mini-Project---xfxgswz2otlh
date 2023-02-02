@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Space Grotesk" rel="stylesheet" />
+  <link rel="stylesheet" id="desktop-css" href="./styles.css" />
+  <link rel="stylesheet" id="mobile-css" href="./stylemobile.css" />
+</head>
+
+<body>
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+  000
+  Cardholder Name
+  e.g. Jane Appleseed
+  Card Number
+  e.g. 1234 5678 9123 0000
+  Exp. Date (MM/YY)
+  MM
+  YY
+  CVC
+  e.g. 123
+  Confirm -->
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <div id="global-parent">
+    <div id="background-left">
+      <img id="gradient-image" src="/images/bg-main-desktop.png" />
+    </div>
+
+    <div id="credit-front">
+      <div>
+        <img id="credit-front-image" src="/images/bg-card-front.png" />
+      </div>
+      <div><img id="logo" src="images/card-logo.svg" /></div>
+
+      <div id="number">0000 0000 0000 0000</div>
+      <div id="name">JANE APPLESEED</div>
+      <div id="month">00/</div>
+      <div id="year">00</div>
+
+    </div>
+
+    <div id="credit-back">
+      <div><img id="credit-back-image" src="/images/bg-card-back.png" /></div>
+      <div class="credit-back-image_cvv" id="cvv">000</div>
+    </div>
+
+    <!-- carddetails -->
+    <div id="info-back">
+      <form class="info-card" action="">
+        <label for="cardholder_name">CARDHOLDER NAME</label>
+        <br />
+        <input type="text" class="info form-cardholder_name" id="cardholder_name" placeholder="e.g. Jane Appleseed" />
+        <br />
+
+        <label for="card_number">CARD NUMBER</label>
+        <br />
+        <input type="text" minlength="0" maxlength="16" class="info form-card-number" id="card_number" placeholder="e.g. 1234 5678 9123 0000" />
+        <p class="hidden" id="errorCardNumber"></p>
+        <br />
+
+        <div class="exp_date_cvv">
+          <div class="exp_date_mm_yy">
+            <div class="exp_date_mm_yy">
+              
+              <label for="exp_date>EXP.DATE(MM/YY)">EXP.DATE (MM/YY)</label>
+              <div class="exp_date_MM_YY_Inp">
+                <input type="number" class="info exp_date_mm" id="exp_month" min="1" max="12" placeholder="MM"
+                  maxlength="2" />
+                <input type="number" class="info exp_date_yy" id="exp_year" min="0" max="99" placeholder="YY"
+                  maxlength="2" />
+              </div>
+            </div>
+            <div class="error_mm_yy">
+              <p class="hiddenmm" id="errorMonth" width="45%"></p>
+              <p class="hiddenyy" id="errorYear" width="45%"></p>
+            </div>
+          </div>
+          <div class="cvv_details_sec">
+            <label for="cvv">CVC</label>
+            <br />
+            <input type="number" class="info cvv_details" id="form_cvv" placeholder="e.g. 123" min="0" max="999"
+              minlength="3" maxlength="3" />
+            <p class="hiddencvv" id="errorCvv"></p>
+          </div>
+        </div>
+        <button type="submit" class="form-btn">
+          <h3 id="confirm_button" style="margin: 0; padding: 0;">Confirm</h3>
+        </button>
+      </form>
+      <p id="footer_text">Challenge by <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank" style="text-decoration: underline; color:blueviolet ;">Frontend Mentor</a> . Coded by <a href="#" style="text-decoration: underline; color:blueviolet;">Saurabh Kumar</a>.</p>
+    </div>
+
+    
+
+    <!-- ThankYou text section after confirm button is clicked -->
+
+    <section id="Confirm_page">
+      <div class="Thankyou_page">
+        <div>
+          <img id="Confirm_icon" src="images/icon-complete.svg" />
+        </div>
+        <div>
+          <h2 id="msg" style="margin: 0; padding-top: 30px;">THANK YOU!</h2>
+        </div>
+        <div>
+          <p id="text_msg">We've added your card details</p>
+        </div>
+        <div>
+          <button id="Continue_btn">Continue</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="App.js"></script>
+
+</html>
